@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Image, ActivityIndicator } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import { AuthProvider, useAuth } from './AuthContext';
+import { AuthProvider, useAuth } from './router/AuthContext';
 import Home from './Home';
 
 const Stack = createStackNavigator();

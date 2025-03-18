@@ -3,24 +3,24 @@
 ---
 ## 18.03.2025
 
-Account  : PDK
-Password : 244
+    Account  : PDK
+    Password : 244
 
 ---
 # Initial Login
-![](./Submit/Screen1.jpg)
+![](./SUBMIT/Screen1.jpg)
 ---
 # Input Login Form
-![](./Submit/Screen2.jpg)
+![](./SUBMIT/Screen2.jpg)
 ---
 # Correct Account
-![](./Submit/Screen3.jpg)
+![](./SUBMIT/Screen3.jpg)
 ---
 # Wrong Account
-![](./Submit/Screen4.jpg)
+![](./SUBMIT/Screen4.jpg)
 ---
 # Account Screen
-![](./Submit/Account.jpg)
+![](./SUBMIT/Account.jpg)
 ---
 # Explorer Screen
-![](./Submit/Explorer.jpg)
+![](./SUBMIT/Explorer.jpg)

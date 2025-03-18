@@ -78,6 +78,8 @@ const AccountScreen = () => {
       <View style={styles.header} />
 
       <View style={styles.content}>
+        <Image style={{height:150,width:150,borderRadius:40,}}
+        source={require("./assets/PDK.jpg")}/>
         <Text style={styles.username}>Pham Dang Khue</Text>
         <Text style={styles.role}>Game developer</Text>
         <Text style={styles.description}>
@@ -86,7 +88,7 @@ const AccountScreen = () => {
 
         <TouchableOpacity
   style={styles.signOutButton}
-  onPress={() => navigation.replace('Login')} // Đưa về màn hình đăng nhập
+  onPress={() => navigation.navigate('Home')} // Đưa về màn hình đăng nhập
 >
   <Text style={styles.signOutText}>Sign Out</Text>
 </TouchableOpacity>
@@ -181,7 +183,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'skyblue',
   },
   content: {
-    marginTop: 150,
+    marginTop: 50,
     alignItems: 'center',
     paddingHorizontal: 20,
   },

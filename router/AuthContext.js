@@ -7,8 +7,6 @@ const AuthContext = createContext();
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
-
-  // Kiểm tra thông tin đăng nhập khi ứng dụng khởi động
   useEffect(() => {
     const loadUser = async () => {
       try {
@@ -27,15 +25,9 @@ export const AuthProvider = ({ children }) => {
   }, []);
 
   const login = async (email, password) => {
-    if (email === 'PDK' && password === '244') {
+    if (email === 'PeDrKi' && password === '244') {
       const userData = { email };
       setUser(userData);
-
-      try {
-        await AsyncStorage.setItem('user', JSON.stringify(userData));
-      } catch (error) {
-        console.error("Error saving user:", error);
-      }
     } else {
       Alert.alert("WRONG", "Invalid credentials! Try again.");
     }
@@ -43,7 +35,6 @@ export const AuthProvider = ({ children }) => {
 
   const logout = async () => {
     setUser(null);
-    
     try {
       await AsyncStorage.removeItem('user');
     } catch (error) {
